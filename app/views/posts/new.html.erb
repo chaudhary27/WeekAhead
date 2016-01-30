@@ -1,0 +1,9 @@
+<h1> Share your WeekAhead with friends! <h1>
+
+<%= simple_form_for @post do |f| %>
+  <%= f.input :name %>
+  <%= f.input :content %>
+  <%= f.input :date %>
+  <br />
+  <%= f.submit 'Create', class: 'btn btn-primary' %>
+<% end %>
