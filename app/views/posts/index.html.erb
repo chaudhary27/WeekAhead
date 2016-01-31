@@ -1,7 +1,7 @@
 <% @posts.each do |post| %>
   <div>
     <h1><%= post.name %></h1>
-    <h2><%= post.content %></h2><br />
+    <p class="text-center"><%= post.content %></p><br />
     <i><%= post.date %></i>
     <% if post.user.present? %>
       <small> <%= post.user.email %> </small>
