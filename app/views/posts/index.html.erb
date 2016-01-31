@@ -1,11 +1,13 @@
 <% @posts.each do |post| %>
   <div>
     <h1><%= post.name %></h1>
-    <p class="text-center"><%= post.content %></p><br />
+    <p class="text-left"><%= post.content %></p><br />
     <i><%= post.date %></i>
+
     <% if post.user.present? %>
       <small> <%= post.user.email %> </small>
     <% end %>
+
   </div>
   <hr />
 <% end %>
